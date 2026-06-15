@@ -1,0 +1,113 @@
+{
+  "name": "psu-power-build-planner",
+  "version": "0.1.0",
+  "description": "Zero-runtime-dependency TypeScript library, CLI, and static widget that turns a component-level PC or server build into transparent power, PSU, and electricity cost estimates.",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.3",
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "bin": {
+    "psu-build-plan": "./dist/cli/main.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "import": "./dist/data/index.js"
+    },
+    "./components.json": "./dist/data/components.json",
+    "./sources.json": "./dist/data/sources.json",
+    "./efficiency-profiles.json": "./dist/data/efficiency-profiles.json",
+    "./widget": "./dist/widget/embed.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "bootstrap.md",
+    "docs"
+  ],
+  "keywords": [
+    "psu",
+    "power-supply",
+    "build-planner",
+    "pc-builder",
+    "multi-gpu",
+    "ai-rig",
+    "homelab",
+    "electricity",
+    "tsc",
+    "esmodules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pyralis-labs/psu-power-build-planner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pyralis-labs/psu-power-build-planner/issues",
+    "email": "security@pyralislabs.io"
+  },
+  "homepage": "https://github.com/pyralis-labs/psu-power-build-planner#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "pnpm build:package && pnpm build:widget",
+    "build:package": "node scripts/build-package.mjs",
+    "build:widget": "vite build",
+    "preview:widget": "vite preview --root dist/widget --port 4173 --host 127.0.0.1",
+    "generate:embed": "node scripts/generate-embed.mjs",
+    "prebuild:package": "pnpm generate:embed",
+    "prebuild:widget": "pnpm generate:embed",
+    "pretest": "pnpm generate:embed",
+    "pretest:coverage": "pnpm generate:embed",
+    "pretypecheck": "pnpm generate:embed",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.build.json",
+    "validate:data": "pnpm generate:embed && node scripts/validate-data.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:browser": "playwright test",
+    "test:browser:install": "playwright install --with-deps chromium",
+    "check:runtime-deps": "node scripts/check-runtime-deps.mjs",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate:data && pnpm test:coverage && pnpm build && pnpm check:runtime-deps && pnpm verify:pack",
+    "verify:pack": "node scripts/verify-pack.mjs",
+    "changeset": "changeset",
+    "prepack": "pnpm build"
+  },
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "axe-core": "^4.10.0",
+    "eslint": "^9.17.0",
+    "fast-check": "^3.23.0",
+    "globals": "^15.14.0",
+    "jsdom": "^25.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

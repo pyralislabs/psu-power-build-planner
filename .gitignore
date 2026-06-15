@@ -1,0 +1,50 @@
+# Build artifacts
+dist/
+*.tsbuildinfo
+.tsbuild/
+
+# Generated dataset modules (rebuilt by `pnpm generate:embed` before every
+# typecheck, test, build, and validate step)
+src/data/_embedded/
+
+# Coverage
+coverage/
+
+# Playwright / browser test artifacts
+playwright-report/
+test-results/
+.playwright/
+playwright/.cache/
+.vite/
+
+# Packed tarballs
+*.tgz
+*.tar.gz
+.npm-tarballs/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and secret-bearing configuration
+.env
+.env.*
+.envrc
+.envrc.*
+!.env.example

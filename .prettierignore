@@ -1,0 +1,14 @@
+dist
+coverage
+node_modules
+pnpm-lock.yaml
+playwright-report
+test-results
+**/widget-dist
+.changeset
+src/data/_embedded
+bootstrap.md
+docs/ARCHITECTURE.md
+docs/CODE_STANDARDS.md
+docs/ROADMAP.md
+docs/TESTING.md

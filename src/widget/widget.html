@@ -1,0 +1,27 @@
+/* PSU Power Build Planner — widget entry page. This page is loaded as an iframe target. */
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PSU Power Build Planner</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors *;"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="description"
+      content="Component-derived power, PSU, and electricity cost estimates. Open source, backend-free, zero-runtime-dependency."
+    />
+  </head>
+  <body>
+    <psu-power-build-planner
+      data-profile="local-ai-inference"
+      data-currency="USD"
+      data-rate-per-kwh="0.16"
+    ></psu-power-build-planner>
+    <script type="module" src="./iframe.ts"></script>
+  </body>
+</html>
