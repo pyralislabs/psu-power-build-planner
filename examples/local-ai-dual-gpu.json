@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "buildName": "Dual-GPU local AI training rig",
+  "lines": [
+    { "id": "platform", "componentId": "generic-workstation-w790-platform" },
+    { "id": "cpu", "componentId": "intel-xeon-w7-3465x" },
+    { "id": "gpus", "componentId": "nvidia-rtx-4090", "quantity": 2 },
+    { "id": "memory", "componentId": "generic-ddr5-rdimm-baseline", "quantity": 8 },
+    { "id": "storage", "componentId": "samsung-990-pro-2tb", "quantity": 2 },
+    { "id": "cooler", "componentId": "generic-aio-360mm-cooler-baseline" }
+  ],
+  "operatingProfile": {
+    "preset": "local-ai-always-on",
+    "poweredHoursPerDay": 24,
+    "daysPerYear": 365,
+    "workloadShare": 0.35,
+    "categoryUtilization": {},
+    "fallbackUtilization": 0.25,
+    "ratePerKwh": 0.16,
+    "currency": "USD"
+  },
+  "efficiencyProfileId": "generic-80-plus-platinum-115v-conservative"
+}

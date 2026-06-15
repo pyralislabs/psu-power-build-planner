@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-15",
+  "profiles": [
+    {
+      "id": "generic-80-plus-bronze-115v-conservative",
+      "label": "Generic 80 PLUS Bronze 115V planning curve (conservative)",
+      "inputVoltage": "115v",
+      "positioning": "conservative-planning",
+      "points": [
+        {
+          "loadFraction": 0.1,
+          "efficiencyFraction": 0.78
+        },
+        {
+          "loadFraction": 0.2,
+          "efficiencyFraction": 0.85
+        },
+        {
+          "loadFraction": 0.3,
+          "efficiencyFraction": 0.86
+        },
+        {
+          "loadFraction": 0.5,
+          "efficiencyFraction": 0.85
+        },
+        {
+          "loadFraction": 0.8,
+          "efficiencyFraction": 0.83
+        },
+        {
+          "loadFraction": 1,
+          "efficiencyFraction": 0.82
+        }
+      ],
+      "sourceIds": ["80plus-program-requirements"],
+      "notes": "Conservative planning curve that meets the 80 PLUS Bronze minimum at 20/50/100% load for 115 V input and is biased low. Not a guarantee of any specific PSU product's performance."
+    },
+    {
+      "id": "generic-80-plus-gold-115v-conservative",
+      "label": "Generic 80 PLUS Gold 115V planning curve (conservative)",
+      "inputVoltage": "115v",
+      "positioning": "conservative-planning",
+      "points": [
+        {
+          "loadFraction": 0.1,
+          "efficiencyFraction": 0.8
+        },
+        {
+          "loadFraction": 0.2,
+          "efficiencyFraction": 0.87
+        },
+        {
+          "loadFraction": 0.3,
+          "efficiencyFraction": 0.895
+        },
+        {
+          "loadFraction": 0.5,
+          "efficiencyFraction": 0.9
+        },
+        {
+          "loadFraction": 0.8,
+          "efficiencyFraction": 0.89
+        },
+        {
+          "loadFraction": 1,
+          "efficiencyFraction": 0.87
+        }
+      ],
+      "sourceIds": ["80plus-program-requirements"],
+      "notes": "Conservative planning curve that meets the 80 PLUS Gold minimum at 20/50/100% load for 115 V input and is biased low. Not a guarantee of any specific PSU product's performance."
+    },
+    {
+      "id": "generic-80-plus-gold-230v-conservative",
+      "label": "Generic 80 PLUS Gold 230V planning curve (conservative)",
+      "inputVoltage": "230v",
+      "positioning": "conservative-planning",
+      "points": [
+        {
+          "loadFraction": 0.1,
+          "efficiencyFraction": 0.84
+        },
+        {
+          "loadFraction": 0.2,
+          "efficiencyFraction": 0.9
+        },
+        {
+          "loadFraction": 0.3,
+          "efficiencyFraction": 0.915
+        },
+        {
+          "loadFraction": 0.5,
+          "efficiencyFraction": 0.92
+        },
+        {
+          "loadFraction": 0.8,
+          "efficiencyFraction": 0.91
+        },
+        {
+          "loadFraction": 1,
+          "efficiencyFraction": 0.89
+        }
+      ],
+      "sourceIds": ["80plus-program-requirements"],
+      "notes": "Conservative planning curve that meets the 80 PLUS Gold minimum at 20/50/100% load for 230 V (European) input and is biased low. Typical PSUs are slightly more efficient at higher input voltage."
+    },
+    {
+      "id": "generic-80-plus-platinum-115v-conservative",
+      "label": "Generic 80 PLUS Platinum 115V planning curve (conservative)",
+      "inputVoltage": "115v",
+      "positioning": "conservative-planning",
+      "points": [
+        {
+          "loadFraction": 0.1,
+          "efficiencyFraction": 0.82
+        },
+        {
+          "loadFraction": 0.2,
+          "efficiencyFraction": 0.9
+        },
+        {
+          "loadFraction": 0.3,
+          "efficiencyFraction": 0.915
+        },
+        {
+          "loadFraction": 0.5,
+          "efficiencyFraction": 0.92
+        },
+        {
+          "loadFraction": 0.8,
+          "efficiencyFraction": 0.91
+        },
+        {
+          "loadFraction": 1,
+          "efficiencyFraction": 0.89
+        }
+      ],
+      "sourceIds": ["80plus-program-requirements"],
+      "notes": "Conservative planning curve that meets the 80 PLUS Platinum minimum at 20/50/100% load for 115 V input and is biased low. Not a guarantee of any specific PSU product's performance."
+    },
+    {
+      "id": "generic-fixed-90-percent",
+      "label": "Generic fixed 90% efficiency (advanced override)",
+      "inputVoltage": "unspecified",
+      "positioning": "custom-reference",
+      "points": [
+        {
+          "loadFraction": 0,
+          "efficiencyFraction": 0.9
+        },
+        {
+          "loadFraction": 0.5,
+          "efficiencyFraction": 0.9
+        },
+        {
+          "loadFraction": 1,
+          "efficiencyFraction": 0.9
+        }
+      ],
+      "sourceIds": ["80plus-program-requirements"],
+      "notes": "Flat 90% reference curve for advanced overrides; useful for sensitivity analysis only. Not a representation of a specific PSU product."
+    }
+  ]
+}

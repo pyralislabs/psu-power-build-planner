@@ -1,0 +1,53 @@
+name: Feature request
+
+description: Propose a new feature for the library, CLI, or widget.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: A clear description of the desired behaviour.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options:
+        - Library
+        - CLI
+        - Widget
+        - Dataset
+        - Cross-cutting
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope check
+      description: |
+        Confirm this change does not introduce: PSU product recommendations,
+        affiliate links, current price/inventory lookup, BOM totals, badge
+        generation, hardware/cloud TCO, a backend, telemetry, cookies, or
+        network access. See bootstrap.md §2 for the product boundary.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false

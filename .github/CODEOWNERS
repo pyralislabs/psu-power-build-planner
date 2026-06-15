@@ -1,0 +1,6 @@
+# Default code owners
+* @pyralis-labs/maintainers
+
+# Dataset changes require an additional review
+/data/ @pyralis-labs/dataset-reviewers
+*.schema.json @pyralis-labs/dataset-reviewers

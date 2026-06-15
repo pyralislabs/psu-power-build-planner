@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "buildName": "Manual-only example build",
+  "lines": [
+    {
+      "id": "platform",
+      "manualComponent": {
+        "name": "Hypothetical Mini-ITX board",
+        "category": "platform",
+        "idleDcWattsEach": 12,
+        "sustainedDcWattsEach": 28,
+        "transientDcWattsEach": 38
+      }
+    },
+    {
+      "id": "cpu",
+      "manualComponent": {
+        "name": "Hypothetical 6-core CPU",
+        "category": "cpu",
+        "idleDcWattsEach": 4,
+        "sustainedDcWattsEach": 65,
+        "transientDcWattsEach": 90
+      }
+    },
+    {
+      "id": "gpu",
+      "manualComponent": {
+        "name": "Hypothetical mid-range GPU",
+        "category": "gpu",
+        "idleDcWattsEach": 12,
+        "sustainedDcWattsEach": 180,
+        "transientDcWattsEach": 220
+      }
+    },
+    {
+      "id": "memory",
+      "manualComponent": {
+        "name": "16 GB DDR5 SODIMM",
+        "category": "memory",
+        "idleDcWattsEach": 1,
+        "sustainedDcWattsEach": 3,
+        "transientDcWattsEach": 5
+      },
+      "quantity": 2
+    },
+    {
+      "id": "storage",
+      "manualComponent": {
+        "name": "1 TB NVMe SSD",
+        "category": "storage",
+        "idleDcWattsEach": 0.05,
+        "sustainedDcWattsEach": 5,
+        "transientDcWattsEach": 8
+      }
+    }
+  ],
+  "operatingProfile": {
+    "preset": "homelab-light",
+    "poweredHoursPerDay": 24,
+    "daysPerYear": 365,
+    "workloadShare": 0.1,
+    "categoryUtilization": {},
+    "fallbackUtilization": 0.2,
+    "ratePerKwh": 0.16,
+    "currency": "USD"
+  },
+  "efficiencyProfileId": "generic-80-plus-gold-115v-conservative"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "psu-power-build-planner",
+  "$schema": "https://unpkg.com/@changesets/schema@2.0.0/schema.json",
+  "changelog": ["@changesets/cli/changelog", {
+    "repo": "pyralis-labs/psu-power-build-planner"
+  }],
+  "commit": false,
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "privatePackages": {}
+}

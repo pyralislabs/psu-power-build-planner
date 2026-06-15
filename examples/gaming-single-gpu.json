@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "buildName": "Single-GPU gaming build",
+  "lines": [
+    { "id": "platform", "componentId": "generic-consumer-intel-lga1700-platform" },
+    { "id": "cpu", "componentId": "intel-core-i7-14700k" },
+    { "id": "gpu", "componentId": "nvidia-rtx-4070-ti-super" },
+    { "id": "memory", "componentId": "generic-ddr5-udimm-baseline", "quantity": 2 },
+    { "id": "storage", "componentId": "samsung-990-pro-2tb" },
+    { "id": "cooler", "componentId": "generic-aio-360mm-cooler-baseline" }
+  ],
+  "operatingProfile": {
+    "preset": "gaming",
+    "poweredHoursPerDay": 4,
+    "daysPerYear": 365,
+    "workloadShare": 0.75,
+    "categoryUtilization": {},
+    "fallbackUtilization": 0.2,
+    "ratePerKwh": 0.16,
+    "currency": "USD"
+  },
+  "efficiencyProfileId": "generic-80-plus-gold-115v-conservative"
+}

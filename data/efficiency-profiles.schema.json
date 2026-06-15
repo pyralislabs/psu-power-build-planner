@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pyralis-labs.github.io/psu-power-build-planner/schemas/efficiency-profiles.schema.json",
+  "title": "PSU Power Build Planner efficiency profiles",
+  "type": "object",
+  "required": ["schemaVersion", "updatedAt", "profiles"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updatedAt": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "profiles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/profile" }
+    }
+  },
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "required": ["id", "label", "inputVoltage", "positioning", "points", "sourceIds", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9.]+)*$" },
+        "label": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "inputVoltage": { "enum": ["115v", "230v", "unspecified"] },
+        "positioning": { "enum": ["conservative-planning", "custom-reference"] },
+        "points": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["loadFraction", "efficiencyFraction"],
+            "additionalProperties": false,
+            "properties": {
+              "loadFraction": { "type": "number", "minimum": 0, "maximum": 1 },
+              "efficiencyFraction": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+            }
+          }
+        },
+        "sourceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9.]+)*$" }
+        },
+        "notes": { "type": "string", "minLength": 1, "maxLength": 2000 }
+      }
+    }
+  }
+}

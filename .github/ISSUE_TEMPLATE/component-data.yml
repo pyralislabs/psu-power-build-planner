@@ -1,0 +1,75 @@
+name: Component data change
+
+description: Propose a new or corrected component, source, or efficiency-profile record.
+title: "[data] "
+labels: ["dataset"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of change
+      options:
+        - Add a new component record
+        - Correct an existing component record
+        - Add a new source record
+        - Correct an existing source record
+        - Add an efficiency-profile point/curve
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: id
+    attributes:
+      label: Component or source ID
+      description: Lowercase kebab-case ID. Must be unique and stable.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - platform
+        - cpu
+        - gpu
+        - memory
+        - storage
+        - cooling
+        - network
+        - accessory
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and source URLs
+      description: |
+        HTTPS URLs to the manufacturer spec page, independent measurement, or
+        standard. One URL per source. No affiliate, tracking, or storefront
+        URLs. See data/METHODOLOGY.md.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Evidence summary
+      description: |
+        A short, original summary of what the source says. Do not copy
+        copyrighted prose, tables, or charts. State basis (manufacturer-tdp,
+        measured-dc, etc.) and confidence (high/medium/low).
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Affected outputs
+      description: |
+        Which golden builds, examples, or recommended PSU outputs are
+        affected? Note any prior results that change.
+    validations:
+      required: false

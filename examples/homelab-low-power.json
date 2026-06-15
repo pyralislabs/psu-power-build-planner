@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "buildName": "Low-power homelab node",
+  "lines": [
+    { "id": "platform", "componentId": "generic-miniitx-platform-baseline" },
+    { "id": "cpu", "componentId": "amd-ryzen-5-5600x" },
+    { "id": "memory", "componentId": "generic-ddr4-udimm-baseline", "quantity": 2 },
+    { "id": "ssd-system", "componentId": "generic-nvme-ssd-baseline" },
+    { "id": "hdd-storage", "componentId": "seagate-exos-x20-20tb", "quantity": 4 },
+    { "id": "nic", "componentId": "generic-1gbe-nic-baseline" }
+  ],
+  "operatingProfile": {
+    "preset": "homelab-light",
+    "poweredHoursPerDay": 24,
+    "daysPerYear": 365,
+    "workloadShare": 0.15,
+    "categoryUtilization": {},
+    "fallbackUtilization": 0.2,
+    "ratePerKwh": 0.16,
+    "currency": "USD"
+  },
+  "efficiencyProfileId": "generic-80-plus-bronze-115v-conservative"
+}

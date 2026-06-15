@@ -1,0 +1,2807 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-15",
+  "components": [
+    {
+      "id": "amd-epyc-7763",
+      "manufacturer": "AMD",
+      "model": "EPYC 7763",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-epyc-7763"],
+          "rationale": "Idle planning value for SP3 server class CPU."
+        },
+        "sustained": {
+          "watts": 280,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-epyc-7763"]
+        },
+        "transient": {
+          "watts": 350,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-epyc-7763"]
+        }
+      },
+      "notes": "Milan generation 64-core server CPU with cTDP 225-280 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-epyc-9374f",
+      "manufacturer": "AMD",
+      "model": "EPYC 9374F",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-epyc-9374f"]
+        },
+        "sustained": {
+          "watts": 320,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-epyc-9374f"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-epyc-9374f"]
+        }
+      },
+      "notes": "Genoa generation 32-core frequency-optimized server CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-epyc-9554",
+      "manufacturer": "AMD",
+      "model": "EPYC 9554",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-epyc-9554"]
+        },
+        "sustained": {
+          "watts": 360,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-epyc-9554"]
+        },
+        "transient": {
+          "watts": 400,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-epyc-9554"]
+        }
+      },
+      "notes": "Genoa generation 64-core server CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-epyc-9654",
+      "manufacturer": "AMD",
+      "model": "EPYC 9654",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-epyc-9654"]
+        },
+        "sustained": {
+          "watts": 360,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-epyc-9654"]
+        },
+        "transient": {
+          "watts": 400,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-epyc-9654"]
+        }
+      },
+      "notes": "Genoa generation 96-core server CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-mi250x",
+      "manufacturer": "AMD",
+      "model": "Instinct MI250X",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 35,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-mi250x"]
+        },
+        "sustained": {
+          "watts": 500,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-mi250x"]
+        },
+        "transient": {
+          "watts": 560,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-mi250x"]
+        }
+      },
+      "notes": "Aldebaran generation data-center accelerator, 128 GB HBM2e.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-mi300x",
+      "manufacturer": "AMD",
+      "model": "Instinct MI300X",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 40,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-mi300x"]
+        },
+        "sustained": {
+          "watts": 750,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-mi300x"]
+        },
+        "transient": {
+          "watts": 820,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-mi300x"]
+        }
+      },
+      "notes": "CDNA3 generation data-center accelerator, 192 GB HBM3.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-6800",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 6800",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-6800"]
+        },
+        "sustained": {
+          "watts": 250,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6800"]
+        },
+        "transient": {
+          "watts": 305,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6800"]
+        }
+      },
+      "notes": "RDNA2 generation 16 GB high-end GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-6800xt",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 6800 XT",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-6800xt"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6800xt"]
+        },
+        "transient": {
+          "watts": 365,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6800xt"]
+        }
+      },
+      "notes": "RDNA2 generation 16 GB high-end GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-6900xt",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 6900 XT",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 14,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-6900xt"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6900xt"]
+        },
+        "transient": {
+          "watts": 365,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-6900xt"]
+        }
+      },
+      "notes": "RDNA2 generation 16 GB halo GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-7600",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 7600",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-7600"]
+        },
+        "sustained": {
+          "watts": 165,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7600"]
+        },
+        "transient": {
+          "watts": 200,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7600"]
+        }
+      },
+      "notes": "RDNA3 generation 8 GB mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-7700xt",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 7700 XT",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-7700xt"]
+        },
+        "sustained": {
+          "watts": 245,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7700xt"]
+        },
+        "transient": {
+          "watts": 295,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7700xt"]
+        }
+      },
+      "notes": "RDNA3 generation 12 GB high-end mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-7800xt",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 7800 XT",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-7800xt"]
+        },
+        "sustained": {
+          "watts": 263,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7800xt"]
+        },
+        "transient": {
+          "watts": 320,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7800xt"]
+        }
+      },
+      "notes": "RDNA3 generation 16 GB high-end GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-7900xt",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 7900 XT",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 14,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-7900xt"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7900xt"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7900xt"]
+        }
+      },
+      "notes": "RDNA3 generation 20 GB premium GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-radeon-rx-7900xtx",
+      "manufacturer": "AMD",
+      "model": "Radeon RX 7900 XTX",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 16,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-radeon-rx-7900xtx"]
+        },
+        "sustained": {
+          "watts": 355,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7900xtx"]
+        },
+        "transient": {
+          "watts": 475,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-radeon-rx-7900xtx"]
+        }
+      },
+      "notes": "RDNA3 generation 24 GB halo GPU; multi-GPU sizing requires careful transient planning.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-5-5600x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 5 5600X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-5-5600x"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-5-5600x"]
+        },
+        "transient": {
+          "watts": 88,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-5-5600x"]
+        }
+      },
+      "notes": "Vermeer generation 6-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-5-7600x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 5 7600X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-5-7600x"]
+        },
+        "sustained": {
+          "watts": 105,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-5-7600x"]
+        },
+        "transient": {
+          "watts": 142,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-5-7600x"]
+        }
+      },
+      "notes": "Raphael generation 6-core mainstream AM5 CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-5-9600x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 5 9600X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-5-9600x"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-5-9600x"]
+        },
+        "transient": {
+          "watts": 88,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-5-9600x"]
+        }
+      },
+      "notes": "Granite Ridge generation 6-core AM5 CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-5700x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 5700X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-5700x"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-5700x"]
+        },
+        "transient": {
+          "watts": 88,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-5700x"]
+        }
+      },
+      "notes": "Vermeer generation 8-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-5800x3d",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 5800X3D",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 7,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-5800x3d"]
+        },
+        "sustained": {
+          "watts": 105,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-5800x3d"]
+        },
+        "transient": {
+          "watts": 142,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-5800x3d"]
+        }
+      },
+      "notes": "3D V-Cache 8-core gaming CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-7700x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 7700X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 7,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-7700x"]
+        },
+        "sustained": {
+          "watts": 105,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-7700x"]
+        },
+        "transient": {
+          "watts": 142,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-7700x"]
+        }
+      },
+      "notes": "Raphael generation 8-core AM5 CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-7800x3d",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 7800X3D",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-7800x3d"]
+        },
+        "sustained": {
+          "watts": 120,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-7800x3d"]
+        },
+        "transient": {
+          "watts": 162,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-7800x3d"]
+        }
+      },
+      "notes": "3D V-Cache 8-core AM5 gaming CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-9700x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 9700X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-9700x"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-9700x"]
+        },
+        "transient": {
+          "watts": 105,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-9700x"]
+        }
+      },
+      "notes": "Granite Ridge generation 8-core AM5 CPU with 65 W default TDP.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-7-9800x3d",
+      "manufacturer": "AMD",
+      "model": "Ryzen 7 9800X3D",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-7-9800x3d"]
+        },
+        "sustained": {
+          "watts": 120,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-7-9800x3d"]
+        },
+        "transient": {
+          "watts": 162,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-7-9800x3d"]
+        }
+      },
+      "notes": "Second-generation 3D V-Cache 8-core AM5 gaming CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-5900x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 5900X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-5900x"]
+        },
+        "sustained": {
+          "watts": 105,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-5900x"]
+        },
+        "transient": {
+          "watts": 142,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-5900x"]
+        }
+      },
+      "notes": "Vermeer generation 12-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-5950x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 5950X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-5950x"]
+        },
+        "sustained": {
+          "watts": 105,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-5950x"]
+        },
+        "transient": {
+          "watts": 142,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-5950x"]
+        }
+      },
+      "notes": "Vermeer generation 16-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-7900x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 7900X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 9,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-7900x"]
+        },
+        "sustained": {
+          "watts": 170,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-7900x"]
+        },
+        "transient": {
+          "watts": 230,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-7900x"]
+        }
+      },
+      "notes": "Raphael generation 12-core AM5 CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-7950x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 7950X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-7950x"]
+        },
+        "sustained": {
+          "watts": 170,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-7950x"]
+        },
+        "transient": {
+          "watts": 230,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-7950x"]
+        }
+      },
+      "notes": "Raphael generation 16-core AM5 flagship CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-9900x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 9900X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-9900x"]
+        },
+        "sustained": {
+          "watts": 120,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-9900x"]
+        },
+        "transient": {
+          "watts": 162,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-9900x"]
+        }
+      },
+      "notes": "Granite Ridge generation 12-core AM5 CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-ryzen-9-9950x",
+      "manufacturer": "AMD",
+      "model": "Ryzen 9 9950X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 9,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-ryzen-9-9950x"]
+        },
+        "sustained": {
+          "watts": 170,
+          "basis": "manufacturer-tbp",
+          "confidence": "medium",
+          "sourceIds": ["amd-ryzen-9-9950x"]
+        },
+        "transient": {
+          "watts": 230,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-ryzen-9-9950x"]
+        }
+      },
+      "notes": "Granite Ridge generation 16-core AM5 flagship CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "amd-threadripper-7980x",
+      "manufacturer": "AMD",
+      "model": "Ryzen Threadripper 7980X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["amd-threadripper-7980x"]
+        },
+        "sustained": {
+          "watts": 350,
+          "basis": "manufacturer-tdp",
+          "confidence": "medium",
+          "sourceIds": ["amd-threadripper-7980x"]
+        },
+        "transient": {
+          "watts": 420,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["amd-threadripper-7980x"]
+        }
+      },
+      "notes": "Storm Peak generation 64-core HEDT/workstation CPU on sTR5.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "crucial-mx500-1tb",
+      "manufacturer": "Crucial (Micron)",
+      "model": "MX500 1 TB 2.5-inch SATA SSD",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "manufacturer-tbp",
+          "confidence": "medium",
+          "sourceIds": ["crucial-mx500-spec"]
+        },
+        "sustained": {
+          "watts": 2.5,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["crucial-mx500-spec"]
+        },
+        "transient": {
+          "watts": 3,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["crucial-mx500-spec"]
+        }
+      },
+      "notes": "2.5-inch SATA 6 Gb/s mainstream consumer SSD.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "crucial-t700-2tb",
+      "manufacturer": "Crucial (Micron)",
+      "model": "T700 2 TB",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["crucial-t700-spec"]
+        },
+        "sustained": {
+          "watts": 8,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["crucial-t700-spec"]
+        },
+        "transient": {
+          "watts": 12,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["crucial-t700-spec"]
+        }
+      },
+      "notes": "PCIe 5.0 NVMe SSD with optional heatsink.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-10gbe-nic-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 10 GbE NIC baseline",
+      "category": "network",
+      "power": {
+        "idle": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 7,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a single-port 10 GbE PCIe NIC at line rate. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-1gbe-nic-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 1 GbE NIC baseline",
+      "category": "network",
+      "power": {
+        "idle": {
+          "watts": 0.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 2,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a single-port 1 GbE PCIe NIC at moderate throughput. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-2-5-hdd-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 2.5-inch HDD baseline",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        },
+        "sustained": {
+          "watts": 2.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        },
+        "transient": {
+          "watts": 4,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for a 2.5-inch 5400 RPM mobile-style HDD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-3-5-hdd-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 3.5-inch HDD baseline",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        },
+        "sustained": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        },
+        "transient": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["hdd-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for a 3.5-inch 7200 RPM consumer HDD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-aio-240mm-cooler-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic AIO 240 mm cooler baseline",
+      "category": "cooling",
+      "power": {
+        "idle": {
+          "watts": 2,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        },
+        "sustained": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        },
+        "transient": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        }
+      },
+      "notes": "Planning baseline for a 240 mm AIO liquid cooler (pump + 2 fans). Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-aio-360mm-cooler-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic AIO 360 mm cooler baseline",
+      "category": "cooling",
+      "power": {
+        "idle": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        },
+        "sustained": {
+          "watts": 9,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        },
+        "transient": {
+          "watts": 15,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["aio-cooler-methodology"]
+        }
+      },
+      "notes": "Planning baseline for a 360 mm AIO liquid cooler (pump + 3 fans). Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-air-cpu-cooler-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic tower air cooler baseline",
+      "category": "cooling",
+      "power": {
+        "idle": {
+          "watts": 1,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a single-tower CPU air cooler with one fan. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-atx-platform-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic ATX platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "sustained": {
+          "watts": 45,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "transient": {
+          "watts": 60,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        }
+      },
+      "notes": "Planning baseline for a fully populated ATX motherboard with chipset, slots, audio, networking, and RGB. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-case-fan-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 120 mm case fan baseline",
+      "category": "cooling",
+      "power": {
+        "idle": {
+          "watts": 0.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 1.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for one 120 mm case fan at typical speed. Quantity scales linearly. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-consumer-amd-am4-platform",
+      "manufacturer": "Generic",
+      "model": "Generic consumer AMD AM4 platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 35,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 50,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a typical B550/X570 AM4 consumer motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-consumer-amd-am5-platform",
+      "manufacturer": "Generic",
+      "model": "Generic consumer AMD AM5 platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 20,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 40,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 55,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a typical B650/X670 AM5 consumer motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-consumer-intel-lga1700-platform",
+      "manufacturer": "Generic",
+      "model": "Generic consumer Intel LGA1700 platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 20,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 40,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 55,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a typical B660/Z690/Z790 LGA1700 consumer motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-ddr4-udimm-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic DDR4 UDIMM baseline (per module)",
+      "category": "memory",
+      "power": {
+        "idle": {
+          "watts": 1.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "sustained": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "transient": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        }
+      },
+      "notes": "Planning baseline for one 8-32 GB DDR4 UDIMM. Scale by quantity. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-ddr5-rdimm-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic DDR5 RDIMM baseline (per module)",
+      "category": "memory",
+      "power": {
+        "idle": {
+          "watts": 2,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "sustained": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "transient": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        }
+      },
+      "notes": "Planning baseline for one 32-64 GB DDR5 RDIMM. Scale by quantity. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-ddr5-udimm-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic DDR5 UDIMM baseline (per module)",
+      "category": "memory",
+      "power": {
+        "idle": {
+          "watts": 1.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "sustained": {
+          "watts": 3.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        },
+        "transient": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["ddr5-specification"]
+        }
+      },
+      "notes": "Planning baseline for one 16-32 GB DDR5 UDIMM. Scale by quantity. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-enterprise-nvme-u2-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic enterprise U.2 NVMe SSD baseline",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "sustained": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "transient": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for an enterprise U.2 NVMe SSD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-m2-sata-ssd-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic M.2 SATA SSD baseline",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "sustained": {
+          "watts": 2,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "transient": {
+          "watts": 3,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for an M.2 SATA SSD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-matx-platform-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic microATX platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 20,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "sustained": {
+          "watts": 38,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "transient": {
+          "watts": 50,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        }
+      },
+      "notes": "Planning baseline for a microATX motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-miniitx-platform-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic Mini-ITX platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 15,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "sustained": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        },
+        "transient": {
+          "watts": 40,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline", "atx-specification"]
+        }
+      },
+      "notes": "Planning baseline for a Mini-ITX motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-nvme-ssd-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic M.2 NVMe SSD baseline (consumer)",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "sustained": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "transient": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for a consumer M.2 NVMe SSD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-pcie-add-in-card-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic PCIe add-in card baseline",
+      "category": "accessory",
+      "power": {
+        "idle": {
+          "watts": 1,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a generic PCIe add-in card (USB/SATA/Thunderbolt). Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-sata-ssd-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic 2.5-inch SATA SSD baseline",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "sustained": {
+          "watts": 2.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        },
+        "transient": {
+          "watts": 3.5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvme-power-specification"]
+        }
+      },
+      "notes": "Planning baseline for a 2.5-inch SATA SSD. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-server-eatx-platform-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic server EATX platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 40,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 80,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 110,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a server EATX motherboard with BMC, IPMI, multiple PCIe slots. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-server-sp3-platform",
+      "manufacturer": "Generic",
+      "model": "Generic SP3 server platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 50,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 100,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 140,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for an SP3 dual-socket server motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-wifi-nic-baseline",
+      "manufacturer": "Generic",
+      "model": "Generic Wi-Fi 6/6E M.2 NIC baseline",
+      "category": "network",
+      "power": {
+        "idle": {
+          "watts": 1,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["wifi-card-methodology"]
+        },
+        "sustained": {
+          "watts": 4,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["wifi-card-methodology"]
+        },
+        "transient": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["wifi-card-methodology"]
+        }
+      },
+      "notes": "Planning baseline for a Wi-Fi 6/6E M.2 NIC. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-workstation-trx50-platform",
+      "manufacturer": "Generic",
+      "model": "Generic TR5/TRX50 workstation platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 60,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 85,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for a TR5/TRX50 Threadripper workstation motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "generic-workstation-w790-platform",
+      "manufacturer": "Generic",
+      "model": "Generic W790 workstation platform baseline",
+      "category": "platform",
+      "power": {
+        "idle": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "sustained": {
+          "watts": 60,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        },
+        "transient": {
+          "watts": 85,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["psu-power-planning-baseline"]
+        }
+      },
+      "notes": "Planning baseline for an LGA4677 W790 Xeon workstation motherboard. Methodology in data/METHODOLOGY.md.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i5-13500",
+      "manufacturer": "Intel",
+      "model": "Core i5-13500",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i5-13500"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-13500"]
+        },
+        "transient": {
+          "watts": 154,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-13500"]
+        }
+      },
+      "notes": "Raptor Lake 14-core mainstream CPU with PBP 65 W and MTP 154 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i5-13600k",
+      "manufacturer": "Intel",
+      "model": "Core i5-13600K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i5-13600k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-13600k"]
+        },
+        "transient": {
+          "watts": 181,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-13600k"]
+        }
+      },
+      "notes": "Raptor Lake 14-core unlocked CPU with PBP 125 W and MTP 181 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i5-14400",
+      "manufacturer": "Intel",
+      "model": "Core i5-14400",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i5-14400"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14400"]
+        },
+        "transient": {
+          "watts": 148,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14400"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 10-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i5-14500",
+      "manufacturer": "Intel",
+      "model": "Core i5-14500",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 5,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i5-14500"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14500"]
+        },
+        "transient": {
+          "watts": 154,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14500"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 14-core mainstream CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i5-14600k",
+      "manufacturer": "Intel",
+      "model": "Core i5-14600K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i5-14600k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14600k"]
+        },
+        "transient": {
+          "watts": 181,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i5-14600k"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 14-core unlocked CPU with PBP 125 W and MTP 181 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i7-13700k",
+      "manufacturer": "Intel",
+      "model": "Core i7-13700K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i7-13700k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i7-13700k"]
+        },
+        "transient": {
+          "watts": 253,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i7-13700k"]
+        }
+      },
+      "notes": "Raptor Lake 16-core unlocked CPU with PBP 125 W and MTP 253 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i7-14700k",
+      "manufacturer": "Intel",
+      "model": "Core i7-14700K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 7,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i7-14700k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i7-14700k"]
+        },
+        "transient": {
+          "watts": 253,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i7-14700k"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 20-core unlocked CPU with PBP 125 W and MTP 253 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i9-13900k",
+      "manufacturer": "Intel",
+      "model": "Core i9-13900K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 7,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i9-13900k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-13900k"]
+        },
+        "transient": {
+          "watts": 253,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-13900k"]
+        }
+      },
+      "notes": "Raptor Lake 24-core unlocked flagship CPU with PBP 125 W and MTP 253 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i9-14900",
+      "manufacturer": "Intel",
+      "model": "Core i9-14900",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i9-14900"]
+        },
+        "sustained": {
+          "watts": 65,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-14900"]
+        },
+        "transient": {
+          "watts": 219,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-14900"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 24-core mainstream flagship (non-K) with PBP 65 W and MTP 219 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-core-i9-14900k",
+      "manufacturer": "Intel",
+      "model": "Core i9-14900K",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-ark-i9-14900k"]
+        },
+        "sustained": {
+          "watts": 125,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-14900k"]
+        },
+        "transient": {
+          "watts": 253,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-ark-i9-14900k"]
+        }
+      },
+      "notes": "Raptor Lake Refresh 24-core unlocked flagship CPU with PBP 125 W and MTP 253 W.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-xeon-w5-3435x",
+      "manufacturer": "Intel",
+      "model": "Xeon w5-3435X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-xeon-w5-3435x"]
+        },
+        "sustained": {
+          "watts": 324,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w5-3435x"]
+        },
+        "transient": {
+          "watts": 400,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w5-3435x"]
+        }
+      },
+      "notes": "Sapphire Rapids 20-core LGA4677 workstation CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-xeon-w7-3465x",
+      "manufacturer": "Intel",
+      "model": "Xeon w7-3465X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 20,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-xeon-w7-3465x"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w7-3465x"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w7-3465x"]
+        }
+      },
+      "notes": "Sapphire Rapids 28-core LGA4677 workstation CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "intel-xeon-w9-3495x",
+      "manufacturer": "Intel",
+      "model": "Xeon w9-3495X",
+      "category": "cpu",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["intel-xeon-w9-3495x"]
+        },
+        "sustained": {
+          "watts": 350,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w9-3495x"]
+        },
+        "transient": {
+          "watts": 420,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["intel-xeon-w9-3495x"]
+        }
+      },
+      "notes": "Sapphire Rapids 56-core LGA4677 workstation flagship CPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-a100-80gb",
+      "manufacturer": "NVIDIA",
+      "model": "A100 80GB SXM",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 30,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-a100-80gb"]
+        },
+        "sustained": {
+          "watts": 400,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-a100-80gb"]
+        },
+        "transient": {
+          "watts": 500,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-a100-80gb"]
+        }
+      },
+      "notes": "Ampere data-center accelerator, 80 GB HBM2e.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-h100-sxm",
+      "manufacturer": "NVIDIA",
+      "model": "H100 SXM",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 35,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-h100-sxm"]
+        },
+        "sustained": {
+          "watts": 700,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-h100-sxm"]
+        },
+        "transient": {
+          "watts": 800,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-h100-sxm"]
+        }
+      },
+      "notes": "Hopper generation data-center accelerator, 80 GB HBM3.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-l4",
+      "manufacturer": "NVIDIA",
+      "model": "L4 PCIe",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-l4"]
+        },
+        "sustained": {
+          "watts": 72,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-l4"]
+        },
+        "transient": {
+          "watts": 90,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-l4"]
+        }
+      },
+      "notes": "Ada Lovelace generation low-profile inference accelerator, 24 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-l40",
+      "manufacturer": "NVIDIA",
+      "model": "L40 PCIe",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 25,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-l40"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-l40"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-l40"]
+        }
+      },
+      "notes": "Ada Lovelace generation PCIe data-center accelerator, 48 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-2080ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 2080 Ti",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-2080ti"]
+        },
+        "sustained": {
+          "watts": 250,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-2080ti"]
+        },
+        "transient": {
+          "watts": 300,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-2080ti"]
+        }
+      },
+      "notes": "Turing generation 11 GB halo GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3060",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3060 12 GB",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 9,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3060"]
+        },
+        "sustained": {
+          "watts": 170,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3060"]
+        },
+        "transient": {
+          "watts": 200,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3060"]
+        }
+      },
+      "notes": "Ampere generation 12 GB mainstream GPU with full GA106 die.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3060-ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3060 Ti",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3060-ti"]
+        },
+        "sustained": {
+          "watts": 200,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3060-ti"]
+        },
+        "transient": {
+          "watts": 240,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3060-ti"]
+        }
+      },
+      "notes": "Ampere generation 8 GB mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3070",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3070",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3070"]
+        },
+        "sustained": {
+          "watts": 220,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3070"]
+        },
+        "transient": {
+          "watts": 270,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3070"]
+        }
+      },
+      "notes": "Ampere generation 8 GB high-end mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3080",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3080",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3080"]
+        },
+        "sustained": {
+          "watts": 320,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3080"]
+        },
+        "transient": {
+          "watts": 380,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3080"]
+        }
+      },
+      "notes": "Ampere generation 10 GB high-end GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3080-ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3080 Ti",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 14,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3080-ti"]
+        },
+        "sustained": {
+          "watts": 350,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3080-ti"]
+        },
+        "transient": {
+          "watts": 420,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3080-ti"]
+        }
+      },
+      "notes": "Ampere generation 12 GB premium GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3090",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3090",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 14,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3090"]
+        },
+        "sustained": {
+          "watts": 350,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3090"]
+        },
+        "transient": {
+          "watts": 420,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3090"]
+        }
+      },
+      "notes": "Ampere generation 24 GB halo GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-3090-ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 3090 Ti",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 16,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-3090-ti"]
+        },
+        "sustained": {
+          "watts": 450,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3090-ti"]
+        },
+        "transient": {
+          "watts": 540,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-3090-ti"]
+        }
+      },
+      "notes": "Ampere generation 24 GB halo GPU (refined silicon).",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4060",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4060",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 8,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4060"]
+        },
+        "sustained": {
+          "watts": 115,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4060"]
+        },
+        "transient": {
+          "watts": 140,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4060"]
+        }
+      },
+      "notes": "Ada Lovelace generation 8 GB mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4060-ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4060 Ti (8 GB)",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 9,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4060-ti"]
+        },
+        "sustained": {
+          "watts": 160,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4060-ti"]
+        },
+        "transient": {
+          "watts": 195,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4060-ti"]
+        }
+      },
+      "notes": "Ada Lovelace generation 8 GB mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4070",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4070",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4070"]
+        },
+        "sustained": {
+          "watts": 200,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070"]
+        },
+        "transient": {
+          "watts": 240,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070"]
+        }
+      },
+      "notes": "Ada Lovelace generation 12 GB mainstream GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4070-super",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4070 SUPER",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 10,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4070-super"]
+        },
+        "sustained": {
+          "watts": 220,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-super"]
+        },
+        "transient": {
+          "watts": 265,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-super"]
+        }
+      },
+      "notes": "Ada Lovelace generation 12 GB high-end mainstream refresh.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4070-ti",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4070 Ti",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4070-ti"]
+        },
+        "sustained": {
+          "watts": 285,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-ti"]
+        },
+        "transient": {
+          "watts": 340,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-ti"]
+        }
+      },
+      "notes": "Ada Lovelace generation 12 GB high-end GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4070-ti-super",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4070 Ti SUPER",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 13,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4070-ti-super"]
+        },
+        "sustained": {
+          "watts": 285,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-ti-super"]
+        },
+        "transient": {
+          "watts": 340,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4070-ti-super"]
+        }
+      },
+      "notes": "Ada Lovelace generation 16 GB high-end refresh.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4080",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4080",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 15,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4080"]
+        },
+        "sustained": {
+          "watts": 320,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4080"]
+        },
+        "transient": {
+          "watts": 380,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4080"]
+        }
+      },
+      "notes": "Ada Lovelace generation 16 GB premium GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4080-super",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4080 SUPER",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 15,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4080-super"]
+        },
+        "sustained": {
+          "watts": 320,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4080-super"]
+        },
+        "transient": {
+          "watts": 380,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4080-super"]
+        }
+      },
+      "notes": "Ada Lovelace generation 16 GB premium refresh GPU.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-4090",
+      "manufacturer": "NVIDIA",
+      "model": "GeForce RTX 4090",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-4090"]
+        },
+        "sustained": {
+          "watts": 450,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4090"]
+        },
+        "transient": {
+          "watts": 600,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-4090"]
+        }
+      },
+      "notes": "Ada Lovelace generation 24 GB halo GPU; multi-GPU and high transient spikes require careful sizing.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-6000-ada",
+      "manufacturer": "NVIDIA",
+      "model": "RTX 6000 Ada Generation",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 22,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-6000-ada"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-6000-ada"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-6000-ada"]
+        }
+      },
+      "notes": "Ada Lovelace generation workstation card, 48 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-a4000",
+      "manufacturer": "NVIDIA",
+      "model": "RTX A4000",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 12,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-a4000"]
+        },
+        "sustained": {
+          "watts": 140,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a4000"]
+        },
+        "transient": {
+          "watts": 170,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a4000"]
+        }
+      },
+      "notes": "Ampere generation single-slot workstation card, 16 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-a5000",
+      "manufacturer": "NVIDIA",
+      "model": "RTX A5000",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 16,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-a5000"]
+        },
+        "sustained": {
+          "watts": 230,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a5000"]
+        },
+        "transient": {
+          "watts": 280,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a5000"]
+        }
+      },
+      "notes": "Ampere generation dual-slot workstation card, 24 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "nvidia-rtx-a6000",
+      "manufacturer": "NVIDIA",
+      "model": "RTX A6000",
+      "category": "gpu",
+      "power": {
+        "idle": {
+          "watts": 18,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["nvidia-rtx-a6000"]
+        },
+        "sustained": {
+          "watts": 300,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a6000"]
+        },
+        "transient": {
+          "watts": 360,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["nvidia-rtx-a6000"]
+        }
+      },
+      "notes": "Ampere generation workstation flagship, 48 GB GDDR6.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "samsung-990-pro-2tb",
+      "manufacturer": "Samsung",
+      "model": "990 PRO 2 TB",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["samsung-990-pro-spec"]
+        },
+        "sustained": {
+          "watts": 6,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["samsung-990-pro-spec"]
+        },
+        "transient": {
+          "watts": 8.1,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["samsung-990-pro-spec"]
+        }
+      },
+      "notes": "High-end M.2 NVMe SSD (PCIe 4.0 x4).",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "seagate-exos-x20-20tb",
+      "manufacturer": "Seagate",
+      "model": "Exos X20 20 TB",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 6,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["seagate-exos-x20-spec"]
+        },
+        "sustained": {
+          "watts": 9.4,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["seagate-exos-x20-spec"]
+        },
+        "transient": {
+          "watts": 12,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["seagate-exos-x20-spec"]
+        }
+      },
+      "notes": "Enterprise helium-filled 3.5-inch 7200 RPM SATA/SAS HDD.",
+      "reviewedAt": "2026-06-15"
+    },
+    {
+      "id": "wd-black-sn850x-2tb",
+      "manufacturer": "Western Digital",
+      "model": "WD_BLACK SN850X 2 TB",
+      "category": "storage",
+      "power": {
+        "idle": {
+          "watts": 0.05,
+          "basis": "maintainer-estimate",
+          "confidence": "low",
+          "sourceIds": ["wd-sn850x-spec"]
+        },
+        "sustained": {
+          "watts": 5.5,
+          "basis": "manufacturer-tbp",
+          "confidence": "high",
+          "sourceIds": ["wd-sn850x-spec"]
+        },
+        "transient": {
+          "watts": 7.4,
+          "basis": "manufacturer-maximum",
+          "confidence": "high",
+          "sourceIds": ["wd-sn850x-spec"]
+        }
+      },
+      "notes": "High-end M.2 NVMe SSD (PCIe 4.0 x4) with optional heatsink.",
+      "reviewedAt": "2026-06-15"
+    }
+  ]
+}
