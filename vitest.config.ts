@@ -5,7 +5,15 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     include: ["tests/**/*.test.ts"],
-    exclude: ["node_modules/**", "dist/**", "playwright-report/**", "test-results/**"],
+    // Vitest owns unit tests; Playwright owns browser tests. Keep them apart.
+    exclude: [
+      "node_modules/**",
+      "dist/**",
+      "playwright-report/**",
+      "test-results/**",
+      "tests/widget/embed.test.ts",
+      "tests/widget/accessibility.test.ts",
+    ],
     coverage: {
       provider: "v8",
       reporter: ["text", "html", "json-summary", "lcov"],

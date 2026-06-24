@@ -1,6 +1,7 @@
 dist
 coverage
 node_modules
+.pnpm-store
 pnpm-lock.yaml
 playwright-report
 test-results

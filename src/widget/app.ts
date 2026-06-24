@@ -109,12 +109,12 @@ function initialState(opts: PsuWidgetOptions): WidgetState {
 }
 
 function newId(): string {
-  return `line-${Math.random().toString(36).slice(2, 10)}`;
+  return `line-${crypto.randomUUID()}`;
 }
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
-  attrs: Record<string, string> = {},
+  attrs: Record<string, string | undefined> = {},
   ...children: (Node | string)[]
 ): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -454,12 +454,13 @@ function renderLinesSection(state: WidgetState, root: HTMLElement, handle: PsuWi
   );
   section.appendChild(searchRow);
 
+  const hasResults = state.searchResults.length > 0;
   const resultsBox = el("div", {
     class: "psu-search-list",
-    role: "listbox",
-    "aria-label": "Component search results",
+    role: hasResults ? "listbox" : "status",
+    "aria-label": hasResults ? "Component search results" : undefined,
   });
-  if (state.searchResults.length === 0) {
+  if (!hasResults) {
     resultsBox.appendChild(
       el(
         "div",

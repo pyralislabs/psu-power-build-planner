@@ -48,3 +48,30 @@ We aim to acknowledge new reports within three business days.
 We follow a coordinated disclosure model. We ask reporters to keep
 details private until a fix is released and a CVE is requested, where
 applicable.
+
+## Threat Model
+
+The planner is intentionally embeddable across arbitrary host pages. The widget
+HTML's `frame-ancestors *` directive in the meta CSP is **kept for documentation
+only**; browsers ignore `frame-ancestors` when it is delivered via a `<meta>`
+element (the directive requires an HTTP response header). GitHub Pages, the
+project's v1 host, does not expose configurable response headers.
+
+The widget's data model has no privacy or integrity value worth clickjacking:
+
+- No authentication, no storage, no credentials, no telemetry.
+- All interactions produce component-derived calculations that any host page
+  could compute locally.
+- The host page can already observe planner input and output via the public
+  `PlannerInput` / `PlannerResult` types in `src/index.ts`; clickjacking gains
+  the attacker nothing they could not obtain via a simple embed.
+
+If a stricter embedding policy becomes required (e.g., to prevent UI redress
+attacks against partner brands), deploy the static widget build to Cloudflare
+Pages, which supports custom HTTP response headers, and add a response-level
+`Content-Security-Policy: frame-ancestors <allowlist>`. Until then the
+`frame-ancestors *` directive in the meta CSP is a deliberate, documented
+non-control.
+
+See `todo/security-scan.md` SEC-MED-003 and `bootstrap.md` §17 for the
+architecture rationale and the v1 release threat model.

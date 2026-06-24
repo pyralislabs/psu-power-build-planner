@@ -1,5 +1,4 @@
-/* PSU Power Build Planner — widget entry page. This page is loaded as an iframe target. */
-
+<!-- PSU Power Build Planner — widget entry page. This page is loaded as an iframe target. -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +9,14 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors *;"
     />
+    <!--
+      The `frame-ancestors` directive above is delivered via meta and is therefore ignored
+      by browsers per CSP spec. It is kept for documentation purposes only; a real
+      `frame-ancestors` policy requires HTTP response headers, which GitHub Pages does not
+      provide. See bootstrap.md section 17 ("CI, npm Release, Pages, And Operations") and
+      SECURITY.md for the embeddability trade-off. Switch to Cloudflare Pages (which
+      supports custom headers) for an enforceable `frame-ancestors` policy.
+    -->
     <meta name="referrer" content="no-referrer" />
     <meta
       name="description"

@@ -100,4 +100,10 @@ describe("createPsuWidget", () => {
     const input = handle.getPlannerInput();
     expect(input.lines).toEqual([]);
   });
+
+  it("generates UUID-based line IDs", () => {
+    expect(crypto.randomUUID()).toMatch(
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/,
+    );
+  });
 });
