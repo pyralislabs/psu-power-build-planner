@@ -1,6 +1,6 @@
 {
   "name": "psu-power-build-planner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Zero-runtime-dependency TypeScript library, CLI, and static widget that turns a component-level PC or server build into transparent power, PSU, and electricity cost estimates.",
   "type": "module",
   "license": "MIT",
