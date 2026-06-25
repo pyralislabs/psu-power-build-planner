@@ -67,10 +67,9 @@ jobs:
         # Audit both runtime and dev dependencies. The package has zero runtime
         # dependencies but vulnerable dev tools (Vitest, Vite, esbuild, js-yaml)
         # must be gated here. See todo/security-scan.md INFRA-002.
+        # SECURITY_OVERRIDE.md documents accepted CVEs; this step gates on
+        # --audit-level=high so moderate-only findings do not block CI.
         run: pnpm audit --audit-level=high
-        # SECURITY_OVERRIDE.md (if present and unexpired) may keep this
-        # non-blocking for a documented CVE with no fix available.
-        continue-on-error: true
 
   browser:
     name: Widget browser smoke

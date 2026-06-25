@@ -5,6 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PSU Power Build Planner</title>
+    <!--
+      style-src 'self' 'unsafe-inline': The widget component code (app.ts) sets
+      inline style attributes on some elements (e.g. max-width for quantity
+      inputs, margin/font-size for section headings). Vite-emitted CSS (bundled
+      into dist/widget/assets/styles.css) is served from 'self'. The 'unsafe-inline'
+      token is required for the inline style attributes; it is not required by
+      third-party code. A future refactor could migrate all inline styles to
+      class-based CSS and then tighten this to style-src 'self', but the widget's
+      host-page isolation posture (no auth, no storage, no telemetry) keeps the
+      risk of inline-style abuse at negligible.
+    -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors *;"

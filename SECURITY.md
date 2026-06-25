@@ -75,3 +75,13 @@ non-control.
 
 See `todo/security-scan.md` SEC-MED-003 and `bootstrap.md` §17 for the
 architecture rationale and the v1 release threat model.
+
+### CSP `style-src 'unsafe-inline'`
+
+The widget's Content Security Policy includes `style-src 'self' 'unsafe-inline'`.
+The `unsafe-inline` token is required because the widget component code
+(`src/widget/app.ts`) sets inline `style` attributes on certain elements (quantity
+input widths, heading margins/font-sizes). Vite-emitted CSS files are served from
+`'self'`. A future refactor could migrate all inline styles to class-based CSS and
+tighten to `style-src 'self'`, but the widget's offline, no-storage, no-telemetry
+design keeps the risk of inline-style abuse negligible.
