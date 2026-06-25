@@ -48,3 +48,9 @@ yarn-error.log*
 .envrc
 .envrc.*
 !.env.example
+
+# Local working notes (security scans, scratch planning). Never tracked or
+# published; intentionally excluded from format:check so uncommitted notes do
+# not break CI. Tracked planning lives under docs/ and todo items are surfaced
+# via GitHub issues instead.
+todo/
